@@ -1,0 +1,109 @@
+{
+  "app": {
+    "bundleName": "com.huawei.asynchttpharmonyos",
+    "vendor": "isoftstone",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.asynchttpharmonyos",
+    "name": ".MyApplication",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_MEDIA",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.huawei.asynchttpharmonyos.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "HarmonyAsyncHttp",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
